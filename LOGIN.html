@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale==1.0" />
+        <title>Login</title>
+        <style>
+            h1,
+            form {
+                text-align: center;
+            }
+            .alert-message {
+            color: red;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Login</h1>
+    <form action="">
+        <input type="text" placeholder="Username" id="username" />
+        <input type="password" placeholder="Password" id="password" />
+        <input type="button" value="Login" id="tombol" />
+    </form>
+
+    <script>
+        const bnTombol = document.querySelector("#tombol");
+        const txUsername = document.querySelector("#username");
+        const txPassword = document.querySelector("#password");
+
+        bnTombol.addEventListener("click", function () {
+            if (txUsername.value == "UmarGans" && txPassword.value == "Tutor?") {
+                window.location = "landingpage.html";
+            } else {
+                const alertMessage = document.createElement("div");
+                alertMessage.classList.add("alert-message");
+                alertMessage.textContent = "Username atau Password anda salah, silahkan dicek kembali!";
+                document.body.appendChild(alertMessage);
+                setTimeout(function() {
+                    alertMessage.remove();
+                }, 3000);
+            }
+        });
+    </script>
+</body>
