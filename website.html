@@ -4,95 +4,96 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Umar Said As Syakuron XI PPLG 5</title>
-  <link rel="stylesheet" href="website.css">
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-  <header>
-    <nav>
-      <div class="logo">MNTN</div>
-      <ul>
-        <li><a href="#">Equipment</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Blog</a></li>
-        <li><a href="#" class="user-icon">Account</a></li>
+<body class="bg-gray-100 font-sans">
+  <header class="bg-white shadow-md">
+    <nav class="container mx-auto flex items-center justify-between p-5">
+      <div class="text-2xl font-bold text-gray-800">MNTN</div>
+      <ul class="flex space-x-6">
+        <li><a href="#" class="text-gray-700 hover:text-blue-500">Equipment</a></li>
+        <li><a href="#" class="text-gray-700 hover:text-blue-500">About</a></li>
+        <li><a href="#" class="text-gray-700 hover:text-blue-500">Blog</a></li>
+        <li><a href="#" class="text-gray-700 hover:text-blue-500">Account</a></li>
+        <li><a href="#" class="text-gray-700 hover:text-blue-500">Login</a></li>
       </ul>
     </nav>
   </header>
   
-  <main>
-    <section class="hero">
-      <div class="hero-content">
-        <h1>Be Prepared For The<br>Mountains And Beyond!</h1>
-        <a href="#" class="btn">Get Started</a>
+  <main class="container mx-auto p-5">
+    <section class="hero bg-cover bg-center h-80 flex items-center justify-center text-center text-white" style="background-image: url('hero.jpg');">
+      <div>
+        <h1 class="text-4xl md:text-5xl font-bold mb-4">Be Prepared For The<br>Mountains And Beyond!</h1>
+        <a href="#" class="bg-blue-500 hover:bg-blue-600 text-white py-2 px-4 rounded mt-4 inline-block">Get Started</a>
       </div>
     </section>
   
-    <section class="slide slide1"> <!-- Added 'slide1' class -->
-      <div class="slide-content">
-        <div class="slide-text">
-          <h2>What level of hiker are you?</h2>
-          <p>Determining what level of hiker you are can be an important tool when planning future hikes. This hiking level guide will help you plan hikes according to different hike ratings set by various websites like All Trails and Modern Hiker.</p>
-          <a href="#" class="btn">read more</a>
+    <section class="slide py-12 bg-white">
+      <div class="flex flex-col md:flex-row items-center md:space-x-8">
+        <div class="slide-text md:w-1/2 text-center md:text-left mb-6 md:mb-0">
+          <h2 class="text-3xl font-semibold mb-4">What level of hiker are you?</h2>
+          <p class="text-gray-700 mb-4">Determining what level of hiker you are can be an important tool when planning future hikes. This hiking level guide will help you plan hikes according to different hike ratings set by various websites like All Trails and Modern Hiker.</p>
+          <a href="#" class="text-blue-500 hover:underline">Read more</a>
         </div>
-        <div class="slide-image">
-          <img src="1.png" alt="Hiker on Mountain">
+        <div class="slide-image md:w-1/2">
+          <img src="1.png" alt="Hiker on Mountain" class="w-full rounded-lg shadow-md">
         </div>
       </div>
     </section>    
   
-    <section class="slide">
-      <div class="slide-content">
-        <div class="slide-image">
-          <img src="2.png" alt="Hiking Gear">
+    <section class="slide py-12 bg-gray-50">
+      <div class="flex flex-col md:flex-row items-center md:space-x-8">
+        <div class="slide-image md:w-1/2 mb-6 md:mb-0">
+          <img src="2.png" alt="Hiking Gear" class="w-full rounded-lg shadow-md">
         </div>
-        <div class="slide-text">
-          <h2>Picking the right Hiking Gear!</h2>
-          <p>The nice thing about beginning hiking is that you don't really need any special gear, you can probably get away with things you already have. Let's start with clothing. A typical mistake hiking beginners make is wearing jeans and regular clothes, which will get heavy and chafe if they get sweaty or wet.</p>
-          <a href="#" class="btn">read more</a>
+        <div class="slide-text md:w-1/2 text-center md:text-left">
+          <h2 class="text-3xl font-semibold mb-4">Picking the right Hiking Gear!</h2>
+          <p class="text-gray-700 mb-4">The nice thing about beginning hiking is that you don't really need any special gear, you can probably get away with things you already have...</p>
+          <a href="#" class="text-blue-500 hover:underline">Read more</a>
         </div>
       </div>
     </section>
   
-    <section class="slide">
-      <div class="slide-content">
-        <div class="slide-text">
-          <h2>Understand Your Map & Timing</h2>
-          <p>To start, print out the hiking guide and map. If it's raining, throw them in a Zip-Lock bag. Read over the guide, study the map, and have a good idea of what to expect. I like to know what my next landmark is as I hike. For example, I'll read the guide and know that, in a mile, I make a right turn at the junction.</p>
-          <a href="#" class="btn">read more</a>
+    <section class="slide py-12 bg-white">
+      <div class="flex flex-col md:flex-row items-center md:space-x-8">
+        <div class="slide-text md:w-1/2 text-center md:text-left mb-6 md:mb-0">
+          <h2 class="text-3xl font-semibold mb-4">Understand Your Map & Timing</h2>
+          <p class="text-gray-700 mb-4">To start, print out the hiking guide and map. If it's raining, throw them in a Zip-Lock bag...</p>
+          <a href="#" class="text-blue-500 hover:underline">Read more</a>
         </div>
-        <div class="slide-image">
-          <img src="3.png" alt="Map and Compass">
+        <div class="slide-image md:w-1/2">
+          <img src="3.png" alt="Map and Compass" class="w-full rounded-lg shadow-md">
         </div>
       </div>
     </section>
   </main>
   
-  <footer>
-    <div class="footer-content">
-      <div class="footer-section">
-        <h3>MNTN</h3>
+  <footer class="bg-gray-800 text-white py-10">
+    <div class="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
+      <div>
+        <h3 class="text-xl font-semibold mb-4">MNTN</h3>
         <p>Get out there & discover your next slope, mountain & destination!</p>
       </div>
-      <div class="footer-section">
-        <h3>More on The Blog</h3>
-        <ul>
-          <li><a href="#">About MNTN</a></li>
-          <li><a href="#">Contributors & Writers</a></li>
-          <li><a href="#">Write For Us</a></li>
-          <li><a href="#">Contact Us</a></li>
-          <li><a href="#">Privacy Policy</a></li>
+      <div>
+        <h3 class="text-xl font-semibold mb-4">More on The Blog</h3>
+        <ul class="space-y-2">
+          <li><a href="#" class="hover:underline">About MNTN</a></li>
+          <li><a href="#" class="hover:underline">Contributors & Writers</a></li>
+          <li><a href="#" class="hover:underline">Write For Us</a></li>
+          <li><a href="#" class="hover:underline">Contact Us</a></li>
+          <li><a href="#" class="hover:underline">Privacy Policy</a></li>
         </ul>
       </div>
-      <div class="footer-section">
-        <h3>More on MNTN</h3>
-        <ul>
-          <li><a href="#">The Team</a></li>
-          <li><a href="#">Jobs</a></li>
-          <li><a href="#">Press</a></li>
+      <div>
+        <h3 class="text-xl font-semibold mb-4">More on MNTN</h3>
+        <ul class="space-y-2">
+          <li><a href="#" class="hover:underline">The Team</a></li>
+          <li><a href="#" class="hover:underline">Jobs</a></li>
+          <li><a href="#" class="hover:underline">Press</a></li>
         </ul>
       </div>
     </div>
-    <div class="footer-bottom">
+    <div class="text-center text-gray-500 mt-10">
       <p>&copy; 2023 MNTN, Inc. Terms & Privacy</p>
     </div>
   </footer>

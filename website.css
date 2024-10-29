@@ -14,11 +14,10 @@
   /* Header Styles */
   header {
     padding: 20px 40px;
-    position: fixed;
+    position: relative;
     top: 0;
     left: 0;
     width: 100%;
-    z-index: 100;
   }
   
   nav {
